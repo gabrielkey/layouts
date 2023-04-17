@@ -25,12 +25,20 @@ header {
 }
 
 nav {
-    flex: 1 1 200px;
+    flex: 1 1 100vw;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    margin: 5%;
+    font-size: 2em;
 }
 
 main {
     flex: 20 1 500px;
-    height: calc(100vh - 224px); /* Header = 100px | Footer = 100px | Margin = (3px + 3px) * 4 = 24px*/
+    height: calc(100vh - 330px);
 }
 
 aside {
@@ -42,23 +50,18 @@ footer {
     height: 100px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 @media only screen and (max-width: 923px){
     main {
-        height: calc(100vh - 330px);
+        height: calc(100vh - 436px);
     }
 
     aside {
         flex: 1 1 100vw;
         height: 100px;
-    }
-}
-
-@media only screen and (max-width: 717px){
-    nav {
-        height: 100px;
-    }
-
-    main {
-        height: calc(100vh - 436px);
     }
 }
